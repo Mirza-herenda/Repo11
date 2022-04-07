@@ -1,4 +1,4 @@
-myArr=[2,4,0,8,10];
+var myArr=[2,4,0,8,10];
 
 function myArrayFunction(myItems) 
 {
