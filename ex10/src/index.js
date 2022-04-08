@@ -1,18 +1,14 @@
-arr1=[7, "ate", "", false, 9];
-arr2=["a", "b", "c"];
-arr3=[false, null, 0, NaN, undefined, ""];
-arr4=[null, NaN, 1, 2, undefined];
-
-
-function myBouncer(arr) 
-{
-    let bool=arr.filter(element=>Boolean(element)===true)
-    
-  
-
- return bool;
+function myBouncer(arr) {
+    let newArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]) newArray.push(arr[i]);
+    }
+    return newArray;
 }
-console.log(myBouncer(arr1));
- console.log(myBouncer(arr2));
- console.log(myBouncer(arr3));
-console.log(myBouncer(arr4));
+
+console.log(myBouncer([7, "ate", "", false, 9]));
+console.log(myBouncer(["a", "b", "c"]));
+console.log(myBouncer([false, null, 0, NaN, undefined, ""]));
+console.log(myBouncer([null, NaN, 1, 2, undefined]));
+
+module.exports = myBouncer;

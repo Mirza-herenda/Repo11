@@ -1,15 +1,13 @@
-monitorsListArray=["Apple","Peach","Berry"];
+var monitorsListArray = ["Apple", "Peach", "Berry"];
 
-function myMonitorsFunction(obj1) 
-{
-    var monitorList=[];
-    for (let i = 0; i < obj1.length; i++) 
-    {
-        //monitorList=[obj1 + "," + i];
-        monitorList[i]=[obj1[i], i+1];
+function myMonitorsFunction(newPar) {
+    var monitorsList = [];
+    for (var i = 0; i < 3; i++) {
+        monitorsList.push([newPar[i], i + 1]);
     }
-    return monitorList;
-    
+    return monitorsList;
 }
 
-console.log(myMonitorsFunction((monitorsListArray)));
+console.log(myMonitorsFunction(monitorsListArray));
+
+module.exports = myMonitorsFunction;

@@ -1,21 +1,18 @@
+var myPetsArray = ["Dog", "Cat"];
 
-myPetsArray=["Dog","Cat"];
+function myArrayFunction(myPets) {
+    var myNewPets = myPets;
+    myNewPets.push("Bird", "Fish");
 
-function myArrayFunction(myPets) 
-{
-   var myNewPets=myPets.push("Bird","Fish");
-   var firstPet=myPets.unshift("Bird");
-   firstPet=myPets[0];
-   var lastPet=myPets.push["Fish"];
-   lastPet=myPets[3];
-    myNewPets=myPets.pop("Fish");
-    myNewPets=myPets.shift("Bird");
-    myPets[0]="Lion";
-    return {
-        myPets
-        //firstPet
-    };    
+    var firstPet = myNewPets.shift();
+
+    myPets.unshift("Lion");
+
+    var lastPet = myNewPets.pop()
+
+    return myNewPets;
 }
 
-//console.log(myPetsArray);
 console.log(myArrayFunction(myPetsArray));
+
+module.exports = myArrayFunction;
