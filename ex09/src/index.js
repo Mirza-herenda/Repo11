@@ -24,8 +24,6 @@ function myMutation(arr)
     }
 return true;
 }
-
-
     console.log(myMutation(arr1));
 console.log(myMutation(arr2));
  console.log(myMutation(arr3));
